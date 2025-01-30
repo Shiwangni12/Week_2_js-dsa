@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Webpage</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <h2>Click the Button for Action</h2>
+    <button onclick="handleClick()">Click Me</button>
+    <p id="message">This text will change on button click.</p>
+
+    <script>
+        function handleClick() {
+            // Display an alert
+            alert("Button Clicked!");
+
+            // Change the content of the paragraph
+            document.getElementById("message").textContent = "The text has been updated!";
+        }
+    </script>
+
+</body>
+</html>
